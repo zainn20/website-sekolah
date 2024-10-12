@@ -1,0 +1,66 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  transition: background-color 0.3s ease;
+}
+
+header {
+  background-color: #4A90E2;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+header nav ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+header nav ul li a:hover {
+  color: #FFD700;
+}
+
+section {
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+section:hover {
+  transform: scale(1.01);
+}
+section h2 {
+  color: #4A90E2;
+}
+
+.gallery {
+  display: flex;
+  gap: 1rem;
+}
+.gallery img {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #4A90E2;
+  color: white;
+}
+
+.blog {
+  text-align: center;
+}

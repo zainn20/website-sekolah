@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>error page</title>
+</head>
+<body>
+    <script>
+        // Redirect to 404 page if section not found
+        window.addEventListener('hashchange', function() {
+            const sectionId = location.hash.slice(1);
+            if (!document.getElementById(sectionId) && sectionId) {
+                alert('404 - Halaman tidak ditemukan');
+                location.hash = '';
+            }
+        });
+    </script> 
+</body>
+</html>
